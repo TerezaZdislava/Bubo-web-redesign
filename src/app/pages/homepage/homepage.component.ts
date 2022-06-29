@@ -1,17 +1,21 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, Directive, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.scss']
 })
+
 export class HomepageComponent implements OnInit {
   openQuestion: number;
   serviceCarouselCounter: number = 0;
 
+  scrollContainer = document.querySelector("logo-box") as HTMLElement;
+
   constructor() { }
 
   ngOnInit(): void {}
+
 
   toggleQuestion(i: number) {
     if (this.openQuestion !== i) {
@@ -27,12 +31,14 @@ export class HomepageComponent implements OnInit {
       this.countService();  
     }    
   }
+
   prevServices(){
     if (this.serviceCarouselCounter > 0) {
       this.serviceCarouselCounter = this.serviceCarouselCounter - 1;
       this.countService();    
     }
   }
+
   countService() {
     let carousel = document.getElementById('servicesCarousel') as HTMLElement;
     if (this.serviceCarouselCounter === 0) {
@@ -58,4 +64,6 @@ export class HomepageComponent implements OnInit {
         playVideo.pause();
     }    
   }
+  
+  
 }

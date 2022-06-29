@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="in-icon-share-hover" transform="translate(-520 -1215)">
+    <circle id="Ellipse_50" data-name="Ellipse 50" cx="24" cy="24" r="24" transform="translate(520 1215)" fill="#633998"/>
+    <g id="LinkedIn" transform="translate(532 1227.8)">
+      <rect id="Rectangle_146" data-name="Rectangle 146" width="4.793" height="15.187" transform="translate(0.62 7.169)" fill="#fff"/>
+      <path id="Path_4" data-name="Path 4" d="M759.022,154.6c-2.746,0-4.466,1.487-4.784,2.53v-2.384h-5.384c.069,1.266,0,15.187,0,15.187h5.384v-8.218a3.462,3.462,0,0,1,.117-1.241,2.742,2.742,0,0,1,2.6-1.86c1.87,0,2.72,1.4,2.72,3.461v7.859h5.435v-8.444C765.105,156.781,762.429,154.6,759.022,154.6Z" transform="translate(-741.107 -147.574)" fill="#fff"/>
+      <path id="Path_5" data-name="Path 5" d="M739.271,144.062a2.647,2.647,0,1,0-.068,5.269h.035a2.648,2.648,0,1,0,.033-5.269Z" transform="translate(-736.343 -144.062)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
