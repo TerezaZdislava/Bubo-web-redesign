@@ -2,7 +2,6 @@ $margin: 20px;
 $violet: #7041AC;
 
 .header {
-    position: relative;
     height: 80px;
     display: flex;
     align-items: center;
@@ -78,6 +77,7 @@ $violet: #7041AC;
     display: flex;
     border-radius: 40px;
     box-sizing: border-box;
+    outline: white;
     input {
         background-color: transparent;
         border: none;
@@ -122,9 +122,10 @@ $violet: #7041AC;
             display: none;
         }
         .mobile-menu-icon {
-            width: 50px;
-            height: 50px;
             display: block;
+            .content {
+                height: 0%;
+            }
         }
     }
     .background {
@@ -146,11 +147,16 @@ $violet: #7041AC;
         display: flex;
         flex-direction: column;
         background-color: var(--grey);
+        // transition: all .5s ease-out;
+        animation-name: example;
+        animation-duration: 0.3s;
         .content {
             background-color: var(--light-grey);
+            transition: all .5s ease-out;
             z-index: 3;
             padding: 30px;
             box-sizing: border-box;
+            height: 100%;
             hr {
                 width: max-content;
                 height: 1px;
@@ -184,4 +190,8 @@ $violet: #7041AC;
             }
         }
     }
+}
+@keyframes example {
+    0% {left:300px;}
+    100% {left:0}
 }

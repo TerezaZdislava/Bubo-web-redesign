@@ -1,6 +1,6 @@
 article {
-    margin-left: 380px;
-    margin-right: 480px;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 60px;
     margin-bottom: 150px;
     h2 {
@@ -25,9 +25,19 @@ article {
                 padding-inline-start: 20px;
                 li {
                     margin-bottom: 20px;
+                    a {
+                        color: var(--dark-blue);
+                    }
                 }
             }
         }
+    }
+}
+@media (max-width: 1600px) {
+    article {
+        padding: 36px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 @media (max-width: 500px)  {

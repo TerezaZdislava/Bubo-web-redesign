@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'header',
@@ -16,5 +16,4 @@ export class HeaderComponent implements OnInit {
     this.mobileMenu = !this.mobileMenu;
     console.log('showMobileMenu ' + this.mobileMenu)
   }
-
 }

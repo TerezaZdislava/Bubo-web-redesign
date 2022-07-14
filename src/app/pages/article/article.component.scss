@@ -9,8 +9,9 @@ article {
         border-radius: 9px;
     }
     h1 {
-        margin-left: 100px;
-        margin-right: 100px;
+        // margin-left: 100px;
+        // margin-right: 100px;
+        max-width: 950px;
         margin-bottom: 30px;
     }
     .date {
@@ -19,6 +20,7 @@ article {
         font-size: 24px;
         color: var(--grey);
         font-weight: bold;
+        align-self: baseline;
     }
     .content {
         display: flex;
@@ -71,22 +73,36 @@ article {
         }
     }
 }
+@media (max-width: 1500px) {
+    article {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .date {
+        margin-left: 0;
+        align-self: baseline;
+    }
+    h1 {
+        margin-left: 0;
+    }
+}
 @media (max-width: 500px)  {
     article {
-        padding: 36px;
         margin-left: 0;
         margin-right: 0;
+        padding: 36px;
+
         margin-top: 0px;
         align-items: stretch;
         h1 {
             font-size: 36px;
-            margin-left: 0px;
             margin-right: 0px;
+            margin-left: 0;
         }
         .date {
             margin-bottom: 20px;
-            margin-left: 0;
             font-size: 14px;
+            margin-left: 0;
         }
         h2 {
             font-size: 18px;

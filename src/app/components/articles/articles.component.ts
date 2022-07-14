@@ -30,10 +30,10 @@ export class ArticlesComponent implements OnInit {
       carousel.style.transform = "translateX(0%)";
     }
     if (this.articleCarouselCounter === 1) {
-      carousel.style.transform = "translateX(-33.33333333333333%)";
+      carousel.style.transform = "translateX(-20%)";
     }
     if (this.articleCarouselCounter === 2) {
-      carousel.style.transform = "translateX(-66.6666666667%)";
+      carousel.style.transform = "translateX(-40%)";
     }
   }
 

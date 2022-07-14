@@ -18,7 +18,8 @@
             <button class="login button-violet">Vytvořit účet</button>
         </div>
     </div>
-    <img (click)="showMobileMenu()" class="mobile-menu-icon" src="../../../assets/icons/arrow-right.svg">
+    <img *ngIf="!mobileMenu" (click)="showMobileMenu()" class="mobile-menu-icon" src="../../../assets/icons/menu-btn.svg">
+    <img *ngIf="mobileMenu" (click)="showMobileMenu()" class="mobile-menu-icon" src="../../../assets/icons/menu-close-btn.svg">
 </div>
 <div class="background" (click)="showMobileMenu()" *ngIf="mobileMenu"></div>
 <div class="mobile-menu" *ngIf="mobileMenu">

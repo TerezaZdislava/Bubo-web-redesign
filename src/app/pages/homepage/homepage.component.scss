@@ -200,6 +200,41 @@
 
     }
 }
+@media (max-width: 1300px) {
+    .about {
+        margin-left: 0;
+        .text {
+            max-width: 450px !important;
+        }
+
+    .images {
+        img {
+            transition: all .5s;
+            border-radius: 9px;
+            position: absolute;
+        }
+        .img1 {
+            right: 500px !important;
+            width: 340px !important;
+            height: auto !important;
+        }
+        .img2 {
+            top: 200px !important;
+            right: 700px !important;
+            width: 300px !important;
+            height: auto !important;
+        }
+        .img3 {
+            top: 350px !important;
+            right: 500px !important;
+        }
+        .img4 {
+            top: 520px !important;
+            right: 700px !important;
+        }
+    }
+}
+}
 @media (max-width: 500px) {
     .about {
         display: none;
@@ -304,8 +339,14 @@
         flex-direction: column;
         align-items: center;
         margin-left: 0;
+        .text {
+        padding-top: 100px;
+        padding-left: 0;
+        max-width: 690px;
+        }
     }
 }
+
  @media (max-width: 500px) {
     .benefits {
         display: block;
@@ -351,6 +392,7 @@
         .text {
             margin-top: 20px;
             padding-left: 0;
+            padding-top: 0;
             p {
                 font-size: 14px;
             }
@@ -463,8 +505,10 @@
         .carousel {
             height: auto;
             .content {
+                overflow: auto;
                 .card {
                     width: 236px;
+                    padding: 20px;
                     height: 286px;
                     .icon-background {
                         width: 40px;
@@ -476,6 +520,7 @@
                 }
                 h2 {
                     font-size: 18px;
+                    line-height: normal;
                 }
                 span {
                     font-size: 14px;
@@ -506,10 +551,11 @@
         position: relative;
         display: flex;
         img {
-            width: 100%;
+            top: 20px;
+            right: 10px;
+            width: 110%;
             position: absolute;
             border-radius: 9px;
-            // top: 50px;
         }
     }
     .text {
@@ -579,7 +625,7 @@
         margin-left: 5%;
         padding: 30px;
         min-width:0px;
-        display: block;
+        display: flex;
         .image {
             margin-left: 0;
             width: 100%;
@@ -636,6 +682,8 @@
             font-size: 36px;
         }
         .logo-box {
+            overflow: auto;
+            white-space: nowrap;
             margin-left: 44.5px;
             img {
                 width: 148px;
