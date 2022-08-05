@@ -1,6 +1,9 @@
 $margin: 20px;
 $violet: #7041AC;
-
+:host {
+    display: flex;
+    flex-direction: column;
+}
 .header {
     height: 80px;
     display: flex;
@@ -187,6 +190,8 @@ $violet: #7041AC;
             }
             .search {
                 width: 100%;
+                display: flex;
+                background-color: white;
             }
         }
     }

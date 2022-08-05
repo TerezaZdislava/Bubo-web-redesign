@@ -15,6 +15,7 @@
         }
         .buttons {
             padding-right: var(--margin-box);
+            display: flex;
         }
         button {
             border: none;

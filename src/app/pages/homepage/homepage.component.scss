@@ -247,10 +247,18 @@
     max-width: 1660px;
     padding-top: 100px;
     padding-bottom: 150px;
-    margin-left: var(--margin-box);
+    padding-left: var(--margin-box); 
     display: flex;
+    position: relative;
+    align-items: center;
+    .map {
+        position: absolute;
+        z-index: 0;
+        right: 0;
+    }
     .images {
-        width: 696px;
+        z-index: 1;
+        width: 50%;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -308,9 +316,11 @@
 
         }
     }
-    .text {
+    .text-container {
+        z-index: 1;
         padding-left: 100px;
         max-width: 450px;
+        position: relative;
         button {
             width: 167px;
             display: flex;
@@ -353,6 +363,10 @@
         margin-right: 36px;
         margin-left: 36px;
         padding-bottom: 0;
+        padding-left: 0;
+        .map {
+            display: none;
+        }
         h1 {
             font-size: 36px;
         }
@@ -388,6 +402,9 @@
                 height: 110px;
                 right: 0px;
             }
+        }
+        .text-container {
+            padding-left: 0;
         }
         .text {
             margin-top: 20px;
